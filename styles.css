@@ -25,6 +25,12 @@ body {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
+@media (min-width: 768px) {
+    body {
+        background-attachment: fixed; /* <-- ONLY for parallax on desktop */
+    }
+}
+
 /* 1b. Dark Overlay (Creates a semi-transparent Navy filter over the image) */
 /*body::before {
     content: '';
