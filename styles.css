@@ -63,7 +63,7 @@ body {
 @media (min-width: 768px) {
     .cover-container {
         min-height: 100vh;
-        height: calc 100vh;
+        height: 100vh;
     }
 }
 
