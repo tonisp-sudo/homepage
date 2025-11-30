@@ -11,7 +11,7 @@ body {
     background-image: url('images/background.jpg'); 
     background-size: cover; /* Ensures the image always covers the entire viewport */
     background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Optional: Provides a subtle parallax scroll effect */
+    background-attachment: scroll; /* Optional: Provides a subtle parallax scroll effect */
     
     /* Positioning for the overlay and content */
     position: relative;
