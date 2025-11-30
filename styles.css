@@ -1,35 +1,45 @@
-/* --- ENERGETIC & PROFESSIONAL PALETTE (Teal & Navy) --- */
-
 html,
 body {
     height: 100%;
+    margin: 0; /* Ensures no weird spacing */
+    padding: 0;
 }
 
-body {
-    /* --- BACKGROUND IMAGE SETTINGS (New) --- */
-    /* Updated URL to use your local path: images/background.jpg */
+/* --- BACKGROUND STYLING FOR ALL DEVICES (on the HTML tag) --- */
+html {
     background-image: url('images/background.jpg'); 
-    background-size: cover; /* Ensures the image always covers the entire viewport */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Optional: Provides a subtle parallax scroll effect */
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; /* CRUCIAL: Stops the "start and end again" effect */
+    background-color: #001F3F; /* Fallback color for slow loading or errors */
+    
+    /* Ensure the HTML element covers the entire viewport */
+    min-height: 100%; 
+}
+
+/* --- Media Query: Apply 'fixed' parallax only on Desktop/Tablet --- */
+@media (min-width: 768px) {
+    html {
+        background-attachment: fixed; /* Re-enable parallax scrolling for larger screens */
+    }
+}
+
+/* --- ENERGETIC & PROFESSIONAL PALETTE (Teal & Navy) --- */
+
+
+body {
     
     /* Positioning for the overlay and content */
     position: relative;
     z-index: 1; /* Ensures content sits above the overlay */
-
-    /* Center content both vertically and horizontally */
-    justify-content: center;
+    background-color: transparent !important;
 
     /* General text appearance for high contrast */
     color: #FFFFFF;
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
-@media (min-width: 768px) {
-    body {
-        background-attachment: fixed; /* <-- ONLY for parallax on desktop */
-    }
-}
+
 
 /* 1b. Dark Overlay (Creates a semi-transparent Navy filter over the image) */
 /*body::before {
