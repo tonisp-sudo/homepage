@@ -170,14 +170,11 @@ body h2 {
     color: #FFFFFF !important; /* White text on hover */
 }
 
-/* --- REMOVED: .px3 block (Cleanup) --- */
-/*
 .px3 {
-    background-color: #FFFFFF !important; 
+    background-color: #FFFFFF !important; /* White background for content sections */
     border-radius: 15px !important;
     color: #FFFFFF !important;
 }
-*/
 
 .px3 h1 {
     color: #7a3030 !important; /* Navy Blue for headings */
@@ -273,29 +270,25 @@ footer .text-body-secondary {
     border: #00CED1 !important;
 }
 
-/* --- START OF MOBILE RESPONSIVENESS FIX FOR .service-box --- */
 .service-box {
     border : 1px solid #ffffff !important;
     border-radius: 15px !important;
     padding: 15px !important;
+    
+    /* REMOVE margin: 0; */
+
+    margin-right: 10px !important;
+    margin-left: 10px !important; 
     color: #FFFFFF !important;
     transition: all 0.3s ease; 
-    box-sizing: border-box !important;
     
-    /* Mobile Default: Full Width, Centered */
-    width: 90% !important; 
-    margin: 0 auto 20px auto !important; /* Center and add bottom margin for stacking */
+    /* CRUCIAL: Calculate the width to fit 3 per row (100% / 3 = 33.333%).
+       We subtract 20px (10px margin on each side) from the total width of the column. */
+    width: calc(33.333% - 20px) !important; 
+    
+    /* Ensure sizing includes border and padding */
+    box-sizing: border-box !important;
 }
-/* Desktop/Tablet Override: 3-Column Layout */
-@media (min-width: 768px) {
-    .service-box {
-        width: calc(33.333% - 20px) !important; 
-        margin-right: 10px !important;
-        margin-left: 10px !important; 
-        margin-bottom: 50px !important; /* Restore mb-5 spacing from HTML for desktop */
-    }
-}
-/* --- END OF MOBILE RESPONSIVENESS FIX FOR .service-box --- */
 
 .service-box:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
@@ -347,11 +340,15 @@ footer .text-body-secondary {
     filter: brightness(1.2); /* Make it slightly brighter on hover */
 }
 
-/* --- START OF MOBILE RESPONSIVENESS FIX FOR .project-box --- */
 .project-box {
     border : 1px solid #ffffff !important;
     border-radius: 15px !important;
     padding: 15px !important;
+    
+    /* Critical Sizing & Spacing */
+    margin-right: 10px !important;
+    margin-left: 10px !important; 
+    width: calc(33.333% - 20px) !important; 
     min-height: 250px; /* Optional: Sets a base height */
     height: 100%; /* Allows the box to stretch vertically */
     
@@ -360,35 +357,7 @@ footer .text-body-secondary {
     color: #FFFFFF !important;
     transition: all 0.3s ease; 
     box-sizing: border-box !important;
-
-    /* Mobile Default: Full Width, Centered */
-    width: 90% !important; 
-    margin: 0 auto 20px auto !important; /* Center and add bottom margin for stacking */
 }
-/* Desktop/Tablet Override: 3-Column Layout */
-@media (min-width: 768px) {
-    .project-box {
-        width: calc(33.333% - 20px) !important; 
-        margin-right: 10px !important;
-        margin-left: 10px !important; 
-        margin-bottom: 50px !important; /* Restore mb-5 spacing from HTML for desktop */
-    }
-}
-/* --- END OF MOBILE RESPONSIVENESS FIX FOR .project-box --- */
-
-/* --- PORTFOLIO ROW ALIGNMENT (New CSS Added) --- */
-.portfolio-row {
-    display: flex;
-    justify-content: center; /* Centers the whole group horizontally */
-    align-items: stretch;  /* Makes all project boxes the same height */
-    flex-wrap: wrap; 
-    
-    /* Compensate for the custom 10px outer margin of the boxes */
-    margin-left: -10px;
-    margin-right: -10px;
-}
-/* --- END OF PORTFOLIO ROW ALIGNMENT --- */
-
 
 #projects h2, #projects h4 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
