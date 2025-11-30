@@ -54,7 +54,7 @@ body {
 /* 2. Cover Container: Define the max width for the main content box */
 .cover-container {
     max-width: 42em; /* Standard width from the original example for readability */
-
+    padding-top: 50px;
     min-height: 101vh;
     margin-left: auto;
     margin-right: auto;
