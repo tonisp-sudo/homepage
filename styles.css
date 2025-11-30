@@ -27,24 +27,6 @@ body {
     text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
-
-/* --- ENERGETIC & PROFESSIONAL PALETTE (Teal & Navy) --- */
-
-
-body {
-    /* BODY MUST BE FLEXIBLE AND TRANSPARENT */
-    background-color: transparent !important;
-    min-height: 100vh; /* Ensures content fully covers viewport */
-    margin: 0; 
-    padding: 0;
-    position: relative;
-    z-index: 1;
-    color: #FFFFFF;
-    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-}
-
-
-
 /* 1b. Dark Overlay (Creates a semi-transparent Navy filter over the image) */
 /*body::before {
     content: '';
