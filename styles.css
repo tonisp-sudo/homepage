@@ -129,8 +129,7 @@ body h2 {
 }
 
 .container-fluid.py-5 p {
-    text-align: center;
-    margin-left: 17%;
+    text-align: center !important;
     color: #ffffff; /* Navy text */
     text-shadow: 0 .5rem .9rem rgb(0, 0, 0)
 }
