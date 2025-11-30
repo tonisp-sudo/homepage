@@ -16,10 +16,8 @@ html {
 /* --- Media Query: Apply 'fixed' parallax only on Desktop/Tablet --- */
 @media (min-width: 768px) {
     html {
-        background-attachment: scroll; /* Re-enable parallax scrolling for larger screens */
-        background-repeat: repeat-y;
-        background-size: 100%;
-
+        background-attachment: fixed; /* Re-enable parallax scrolling for larger screens */
+        
     }
 }
 
