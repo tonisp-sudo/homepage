@@ -1,0 +1,56 @@
+.navbar {
+    background-color: #001F3F !important;
+    border-color: black !important;
+    border-radius: 1px !important;
+}
+
+.navbar a.nav-link:hover {
+    background-color: rgb(43, 43, 43) !important;
+    border-radius: 5px; /* optional, makes it look nicer */
+}
+
+.feature-icon {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 7px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.feature.col {
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 15px;
+    width: 31%;
+}
+
+.feature.col:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    background-color: rgb(246, 246, 246);
+}
+
+.feature.col h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 50%;
+}
+
+body h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container-fluid.py-5 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+
+}
+
+.container-fluid.py-5 h1 {
+    text-align: left;
+    margin: 70px;
+}   

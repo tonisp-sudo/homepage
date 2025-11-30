@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praks IT</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    </svg>
+
+    <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Praks IT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-md-auto custom-nav-nudge mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div class="dropdown ms-md-auto">
+                    <button class="btn nav-link text-white" type="button" id="searchDropdown" data-bs-toggle="dropdown"
+                        aria-expanded="false" aria-label="Toggle Search">
+
+                        <i class="bi bi-search"></i>
+
+                    </button>
+
+                    <div class="dropdown-menu dropdown-menu-end p-2" aria-labelledby="searchDropdown">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+                            <button class="btn btn-outline-success sch-btn" type="submit">Go</button>
+                        </form>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column justify-content-center">
+
+        <!-- Landing -->
+        <main class="px-3">
+            <p class="lead landingstart">Hi, my name is</p>
+            <h1 class="display-1 fw-bold mb-4 landingtext">Tõnis Praks</h1>
+            <h2 class="display-6 fw-normal mb-4 main-text">Network & Infrastructure Specialist | Web Developer</h2>
+            <p class="lead main-description">
+                I build robust, reliable infrastructure and create dynamic web solutions using modern technologies.
+                Let's connect to build your next great project.
+            </p>
+            <p class="lead mt-5 button-container">
+                <a href="#services" class="btn btn-lg fw-bold main-button">Services</a>
+            </p>
+        </main>
+
+    </div>
+
+    <!-- Load Bootstrap 5.3 JS from CDN (Place at end of body for performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!--first section-->
+
+    <main>
+        <!--- <section>
+            <div class="container my-5">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                        <p class="lead">
+                            Hi, my name is
+                        </p>
+                        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">
+                            Tõnis Praks
+                        </h1>
+                        <h2>
+                            Network & Infrastructure Specialist and Web Developer
+                        </h2>
+                        <p class="lead">
+                            I make use of modern technologies to build solutions that look great, feel fantastic, and
+                            function as they should.
+                        </p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">
+                                Primary
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                                Default
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <!--Jumbotron-->
+
+        <section>
+
+            </header>
+            <div class="p-5 mb-4 bg-body-tertiary rounded-3 jumbo">
+                <div class="container-fluid py-5">
+
+                    <h1 class="display-5 fw-bold">About</h1>
+                    <p class="col-md-8 fs-4">
+                        I’m an IT professional with hands-on experience across networking, Linux systems, cloud
+                        computing, and front-end web development. After completing my CCNA certification and a
+                        Certificate IV in Information Technology, I’ve continued to grow my skillset through practical
+                        homelab projects and real-world configuration work. I’ve deployed and managed services using
+                        Cisco switching, Raspberry Pi environments, virtualization, Samba, Pi-hole, and Azure. <br> <br>
+
+                        On the frontend side, I create clean and responsive websites using HTML, CSS, Bootstrap, and
+                        Hugo-based static architectures. I enjoy problem solving, building reliable systems, and
+                        continually learning new technologies — from network automation to machine learning. My goal is
+                        to combine strong foundational networking knowledge with modern cloud and development skills to
+                        support scalable, secure, and user-focused solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!--Services-->
+
+            <section id="services" class="container-fluid text-center py-5 ">
+                </div>
+                <h2>Services</h2>
+                <br>
+                <div class="row p-4">
+                    <div class="col-sm-4 mb-5 service-box px-3">
+                        <span class="bi-wifi display-4 icon-color"></span>
+                        <h4>Home & Small Business Network Setup</h4>
+                        <p>Designing and implementing reliable wired and wireless networks tailored to your needs,
+                            including: Router & switch configuration Wireless optimization IoT + smart home integration
+                            VLANs, internal segmentation Troubleshooting and diagnostics</p>
+                    </div>
+                    <div class="col-sm-4 mb-5 service-box px-3">
+                        <span class="bi-server display-4"></span>
+                        <h4>Server & Storage Implementation</h4>
+                        <p>Implementing and configuring local server and storage solutions systems and network file
+                            sharing, giving you secure and private control over your data and backups.</p>
+                    </div>
+                    <div class="col-sm-4 mb-5 service-box px-3">
+                        <span class="bi-cloud-fill display-4"></span>
+                        <h4>Cloud Infrastructure Support</h4>
+                        <p>Setting up and manageing cloud resources such as AWS and Azure services, virtual networks,
+                            user access, and cost monitoring to ensure efficient and secure cloud-based operations.</p>
+                    </div>
+                    <div class="col-sm-4 mb-5 service-box px-3">
+                        <span class="bi-lock-fill display-4"></span>
+                        <h4>Cybersecurity & Network Hardening</h4>
+                        <p>Strengthening networks through firewall policies, access control, traffic inspection, DNS
+                            filtering, and best-practice security measures to protect your systems and data.</p>
+                    </div>
+                    <div class="col-sm-4 mb-5 service-box px-3">
+                        <span class="bi-code-slash display-4"></span>
+                        <h4>Web Development</h4>
+                        <p>Deploying, customizing and hosting websites, including theme modifications, CSS styling,
+                            performance optimization, and domain configuration to help your brand stand out online.</p>
+                    </div>
+                    <div class="col-sm-4 mb-5 service-box px-3">
+                        <span class="bi-laptop display-4"></span>
+                        <h4>Tech Support & IT Consultancy</h4>
+                        <p>Practical IT guidance and hands-on technical support, assisting with troubleshooting, device
+                            setup, software configuration, and personalized technology advice tailored to your needs.
+                        </p>
+                    </div>
+                    <p class="lead mt-5 button-container">
+                        <a href="#contact" class="btn btn-lg fw-bold main-button">Contact Me</a>
+                    </p>
+            </section>
+
+            <!--projects-->
+
+            <div id="projects" class="container-fluid text-center py-5 ">
+                <h2>Portfolio</h2>
+                <h4>What we have created</h4>
+                <div class="row p-4 text-center">
+                    <div class="col-sm-4 mb-5 project-box px3">
+                        <div class="thumbnail">
+                            <img src="images/squat1.png" alt="Paris">
+                            <p><strong>Squat analyzer</strong></p>
+                            <a href="https://github.com/tonisp-sudo/squat_app" class="btn btn-lg fw-bold main-button mt-3">Check it out on GitHub</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-5 project-box px3">
+                        <div class="thumbnail">
+                            <img src="newyork.jpg" alt="New York">
+                            <p><strong>New York</strong></p>
+                            <p>We built New York</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mb-5 project-box px3">
+                        <div class="thumbnail">
+                            <img src="sanfran.jpg" alt="San Francisco">
+                            <p><strong>San Francisco</strong></p>
+                            <p>Yes, San Fran is ours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Education-->
+
+                <!--- <section>
+                <div class="container px-4 py-5" id="featured-3">
+                    <h2 class="pb-2 border-bottom">Education</h2>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+                                <i class="bi-book"></i>
+                                <use xlink:href="#collection"></use>
+                                </svg>
+                            </div>
+                            <h3 class="fs-2 text-body-emphasis">Cisco Certified Network Associate</h3>
+                            <p>
+                                Network fundamentals, IP connectivity, security fundamentals, automation and
+                                programmability.
+                            </p>
+                            <a href="#" class="icon-link">
+                                Learn More
+                                <svg class="bi" aria-hidden="true">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                                <i class="bi-book"></i>
+                                <use xlink:href="#people-circle"></use>
+                                </svg>
+                            </div>
+                            <h3 class="fs-2 text-body-emphasis">Certificate IV Information Technology</h3>
+                            <p>
+                                Network fundamentals, computer hardware and software, operating systems, and
+                                security.
+                            </p>
+                            <a href="#" class="icon-link">
+                                Learn More
+                                <svg class="bi" aria-hidden="true">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+                                <i class="bi-book"></i>
+                                <use xlink:href="#toggles2"></use>
+                                </svg>
+                            </div>
+                            <h3 class="fs-2 text-body-emphasis">Diploma of IT</h3>
+                            <p>
+                                Front and back-end web development, network design and implementation, systems
+                                administration, and cybersecurity.
+                            </p>
+                            <a href="#" class="icon-link">
+                                Learn More
+                                <svg class="bi" aria-hidden="true">
+                                    <use xlink:href="#chevron-right"></use>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+    </main> --->
+
+                <!--Contact-->
+
+                <!--<section>
+        <div class="container align-items-center py-5" id="contact">
+            <h2 class="pb-2 border-bottom">Contact Me</h2>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-center">
+
+                <div class="feature col">
+                    <div
+                        class="feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+                        <i class="bi-envelope"></i>
+                        <use xlink:href="#collection"></use>
+                        </svg>
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Email</h3>
+                    <a href="mailto:tonispraks94@gmail.com" class="btn btn-lg fw-bold main-button">Message Me</a>
+                    <p>
+
+    </section>-->
+
+                <div id="contact" class="container-fluid py-5">
+                    <h2 class="text-center">CONTACT</h2>
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-sm-5 ps-5">
+                            <p>Contact us and we'll get back to you within 24 hours.</p>
+                            <p><i class="bi bi-geo-alt-fill"></i> Ballarat, Australia</p>
+                            <p><i class="bi bi-telephone-fill"></i> +61 0477 734 266</p>
+                            <p><i class="bi bi-envelope-fill"></i> tonispraks94@gmail.com</p>
+                        </div>
+
+                        <div class="col-sm-7 pe-5">
+                            <form action="YOUR_FORM_ENDPOINT" method="POST" data-netlify="true">
+
+                                <div class="row mb-3">
+                                    <div class="col-md-6 form-group mb-3">
+                                        <input class="form-control" id="name" name="name" placeholder="Name" type="text"
+                                            required>
+                                    </div>
+                                    <div class="col-md-6 form-group mb-3">
+                                        <input class="form-control" id="email" name="email" placeholder="Email"
+                                            type="email" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group mb-3">
+                                    <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                                        rows="5"></textarea>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12 d-flex justify-content-end">
+                                        <button class="btn btn-default contact-btn" type="submit">Send</button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--FOOTER-->
+
+                <section>
+                    <div class="container align-items-center">
+                        <footer
+                            class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top main-footer">
+
+                            <p class="col-md-4 mb-0 text-body-secondary">
+                                &copy; 2025 Tõnis Praks
+                            </p>
+
+                            <div class="col-md-4 d-flex align-items-center justify-content-center">
+
+                                <a href="https://github.com/tonisp-sudo" target="_blank"
+                                    class="text-body-secondary fs-4 mx-2" aria-label="GitHub Profile">
+                                    <i class="bi bi-github"></i>
+                                </a>
+
+                                <a href="https://www.linkedin.com/in/tonispraks/" target="_blank"
+                                    class="text-body-secondary fs-4 mx-2" aria-label="LinkedIn Profile">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </div>
+
+                            <ul class="nav col-md-4 justify-content-end custom">
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link px-2 text-body-secondary">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="education.html" class="nav-link px-2 text-body-secondary">Education</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="projects.html" class="nav-link px-2 text-body-secondary">Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="contact.html" class="nav-link px-2 text-body-secondary">Contact</a>
+                                </li>
+                            </ul>
+
+                        </footer>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+</body>
+
+</html>
